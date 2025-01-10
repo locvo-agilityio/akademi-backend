@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "singularName": "student",
+    "pluralName": "students",
+    "displayName": "Student",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "parentName": {
+      "type": "string"
+    },
+    "birthday": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "avatar": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "payment": {
+      "type": "enumeration",
+      "enum": [
+        "cash",
+        "debit",
+        "unpaid"
+      ]
+    },
+    "className": {
+      "type": "string"
+    }
+  }
+}
