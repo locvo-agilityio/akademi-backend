@@ -52,6 +52,21 @@
     },
     "amount": {
       "type": "integer"
+    },
+    "parentFirstName": {
+      "type": "string"
+    },
+    "parentLastName": {
+      "type": "string"
+    },
+    "parentEmail": {
+      "type": "string"
+    },
+    "parentPhone": {
+      "type": "string"
+    },
+    "parentAddress": {
+      "type": "string"
     }
   }
 }

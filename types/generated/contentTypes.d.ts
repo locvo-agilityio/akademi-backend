@@ -399,7 +399,12 @@ export interface ApiStudentStudent extends Struct.CollectionTypeSchema {
       'api::student.student'
     > &
       Schema.Attribute.Private;
+    parentAddress: Schema.Attribute.String;
+    parentEmail: Schema.Attribute.String;
+    parentFirstName: Schema.Attribute.String;
+    parentLastName: Schema.Attribute.String;
     parentName: Schema.Attribute.String;
+    parentPhone: Schema.Attribute.String;
     payment: Schema.Attribute.Enumeration<['cash', 'debit', 'unpaid']>;
     phone: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
