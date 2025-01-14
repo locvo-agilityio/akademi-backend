@@ -382,6 +382,7 @@ export interface ApiStudentStudent extends Struct.CollectionTypeSchema {
   };
   attributes: {
     address: Schema.Attribute.String;
+    amount: Schema.Attribute.Integer;
     avatar: Schema.Attribute.String;
     birthday: Schema.Attribute.String;
     city: Schema.Attribute.String;
@@ -442,6 +443,7 @@ export interface ApiTeacherTeacher extends Struct.CollectionTypeSchema {
     photo: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     startEducation: Schema.Attribute.String;
+    subject: Schema.Attribute.String;
     university: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

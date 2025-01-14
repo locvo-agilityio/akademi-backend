@@ -50,6 +50,9 @@
     },
     "cityEducation": {
       "type": "string"
+    },
+    "subject": {
+      "type": "string"
     }
   }
 }
