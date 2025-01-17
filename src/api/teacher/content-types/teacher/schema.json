@@ -53,6 +53,15 @@
     },
     "subject": {
       "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "expertise": {
+      "type": "string"
+    },
+    "schedule": {
+      "type": "json"
     }
   }
 }

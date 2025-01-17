@@ -399,15 +399,12 @@ export interface ApiStudentStudent extends Struct.CollectionTypeSchema {
       'api::student.student'
     > &
       Schema.Attribute.Private;
-    parentAddress: Schema.Attribute.String;
-    parentEmail: Schema.Attribute.String;
-    parentFirstName: Schema.Attribute.String;
-    parentLastName: Schema.Attribute.String;
+    parent: Schema.Attribute.JSON;
     parentName: Schema.Attribute.String;
-    parentPhone: Schema.Attribute.String;
     payment: Schema.Attribute.Enumeration<['cash', 'debit', 'unpaid']>;
     phone: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    schedule: Schema.Attribute.JSON;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -434,8 +431,10 @@ export interface ApiTeacherTeacher extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     degree: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
     email: Schema.Attribute.String;
     endEducation: Schema.Attribute.String;
+    expertise: Schema.Attribute.String;
     firstName: Schema.Attribute.String;
     lastName: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -447,6 +446,7 @@ export interface ApiTeacherTeacher extends Struct.CollectionTypeSchema {
     phone: Schema.Attribute.String;
     photo: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    schedule: Schema.Attribute.JSON;
     startEducation: Schema.Attribute.String;
     subject: Schema.Attribute.String;
     university: Schema.Attribute.String;
