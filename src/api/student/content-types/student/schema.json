@@ -47,7 +47,7 @@
         "unpaid"
       ]
     },
-    "className": {
+    "grade": {
       "type": "string"
     },
     "amount": {

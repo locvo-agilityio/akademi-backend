@@ -386,12 +386,12 @@ export interface ApiStudentStudent extends Struct.CollectionTypeSchema {
     avatar: Schema.Attribute.String;
     birthday: Schema.Attribute.String;
     city: Schema.Attribute.String;
-    className: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     email: Schema.Attribute.String;
     firstName: Schema.Attribute.String;
+    grade: Schema.Attribute.String;
     lastName: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
