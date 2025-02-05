@@ -62,6 +62,9 @@
     },
     "schedule": {
       "type": "json"
+    },
+    "fullName": {
+      "type": "string"
     }
   }
 }
